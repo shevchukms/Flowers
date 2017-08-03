@@ -6,17 +6,16 @@ public class Bouquet {
 
     ArrayList<Flower> bouquet;
 
-    public Bouquet(ArrayList<Flower> bouquet) {
-        this.bouquet = bouquet;
-    }
+
 
     public ArrayList<Flower> getBouquet() {
         return bouquet;
     }
 
-    public void setBouquet(ArrayList<Flower> bouquet) {
-        this.bouquet = bouquet;
+    public Bouquet() {
     }
 
-
+    public void addToBouquet(Flower flower) {
+       bouquet.add(flower);
+    }
 }

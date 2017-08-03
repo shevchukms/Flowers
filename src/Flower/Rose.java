@@ -7,7 +7,10 @@ public class Rose extends Flower {
         this.name="rose";
     }
 
-/*    public Rose() {
+    public Rose() {
+        this.name="rose";
+    }
+    /*    public Rose() {
 
         name = "Rose";
         length = 0.5;

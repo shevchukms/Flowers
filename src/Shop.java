@@ -10,7 +10,7 @@ public class Shop {
         this.bouquets = bouquets;
     }
 
-    public Shop(ArrayList<Bouquet> bouquets) {
-        this.bouquets = bouquets;
+    public Shop() {
+
     }
 }

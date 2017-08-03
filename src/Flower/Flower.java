@@ -11,8 +11,10 @@ public abstract class Flower {
     int freshness = 0;
     double price = 0.0;
 
+    public Flower() {
+    }
 
-   public Flower(  int length, String color, int freshness, double price) {
+    public Flower(int length, String color, int freshness, double price) {
 
         this.length = length;
         this.color = color;
