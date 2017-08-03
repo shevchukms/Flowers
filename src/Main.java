@@ -26,7 +26,9 @@ public class Main {
         while (flag) {
             System.out.println("***************************");
             System.out.println("create bouquet - press 1");
-            System.out.println("select bouquet - press 2");
+            System.out.println("show all bouquets - press 2");
+            System.out.println("selected bouquet for buy - press 3");
+            System.out.println("show all bouquets - press 2");
             System.out.println("Break - press 0");
             System.out.println("***************************");
             selected = br.readLine();
@@ -35,6 +37,17 @@ public class Main {
                     shop.addBouquet(createBouquet());
                     break;
                 case "2":
+                    shop.showAllbouqets();
+
+                    break;
+                case "3":
+                    shop.showAllbouqets();
+                    System.out.println("write number of selected bouquet");
+                    selected = br.readLine();
+                    shop.buyBouquet(shop.bouquets.get(Integer.parseInt(selected)));
+                    flag = false;
+                    break;
+                case "4":
                     shop.showAllbouqets();
 
                     break;
