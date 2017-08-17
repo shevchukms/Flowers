@@ -1,3 +1,5 @@
+package Flower;
+
 /**
  * Created by вова on 14.10.2016.
  */
@@ -16,7 +18,7 @@ public enum FlowerType {
             case TULPAN:
                 return "Tulpan";
             default:
-                return "no color";
+                return "no type";
         }
 
     }

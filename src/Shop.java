@@ -32,7 +32,7 @@ public class Shop {
     public void buyBouquet(Bouquet bouquet) throws IOException {
         System.out.println("your price is " + bouquet.calculatePrice());
         System.out.println("input your Money");
-        if (Main.br.readLine().equals(bouquet.calculatePrice())) {
+        if (Main.br.readLine().equals((double) bouquet.calculatePrice())) {
             System.out.println("PAYED SUCCEEDED");
         } else {
             buyBouquet(bouquet);
